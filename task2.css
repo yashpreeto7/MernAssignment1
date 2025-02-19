@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* ===== LAYOUT FIX: POSITIONING BOTH NAV BARS ===== */
+.container {
+    display: flex;
+    align-items: center; /* Align horizontal navbar to the vertical navbar's center */
+    gap: 80px; /* Space between the two bars */
+}
+
+/* ===== VERTICAL NAVIGATION BAR WRAPPER (with thin border) ===== */
+.vertical-nav-wrapper {
+    border: 1.5px solid black;  /* Reduced border thickness */
+    padding: 10px;
+    display: inline-block;
+}
+
+/* ===== VERTICAL NAVIGATION BAR ===== */
+.vertical-nav {
+    width: 200px;
+}
+
+.vertical-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.vertical-nav li {
+    padding: 12px;
+    font-size: 18px;
+    background-color: lightblue;
+    border-bottom: 2px solid white;
+    color: blue;
+    text-align: left;
+}
+
+/* Home button */
+.vertical-nav .home {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+}
+
+/* Last item border fix */
+.vertical-nav li:last-child {
+    border-bottom: none;
+}
+
+/* ===== HORIZONTAL NAVIGATION BAR WRAPPER (with thin border) ===== */
+.horizontal-nav-wrapper {
+    border: 1.5px solid black; /* Reduced border thickness */
+    padding: 10px;
+    display: inline-block;
+    background-color: lightgray;
+}
+
+/* ===== HORIZONTAL NAVIGATION BAR ===== */
+.horizontal-nav {
+    width: fit-content;
+}
+
+.horizontal-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.horizontal-nav li {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-right: 2px solid black;
+    color: blue;
+    text-align: center;
+}
+
+/* Home button */
+.horizontal-nav .home {
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+}
+
+/* Remove last border */
+.horizontal-nav li:last-child {
+    border-right: none;
+}

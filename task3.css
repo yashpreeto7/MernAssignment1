@@ -1,0 +1,31 @@
+/* General Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+th {
+    background-color: green;
+    color: white;
+    text-align: left;
+    padding: 12px;
+}
+
+/* Row Styling */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternating Row Colors */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Italicize Some Text */
+td i {
+    font-style: italic;
+}
